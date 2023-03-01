@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #edf1d6;
+}
+
+h1 {
+  margin-bottom: -7rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #40513b;
+}
+
+.submain-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: fit-content;
+  height: fit-content;
+  margin: 10rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.card {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.checkboxes {
+  position: relative;
+  vertical-align: middle;
+  margin: 1rem 0.5rem 1rem 3rem;
+  transform: scale(1.5);
+  font-size: 1.2rem;
+}
+
+button {
+  width: fit-content;
+  position: relative;
+  margin: 1rem 0rem 0rem 5rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: none;
+}
+
+#genrated-pass {
+  position: relative;
+  padding: 0.5rem;
+  margin: 0rem 2rem 2rem 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+button:hover {
+  background: #40513b;
+  color: white;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  border-bottom: 0.1rem solid #609966;
+  transition: width 250ms ease-in-out;
+}
+
+h1:hover::after {
+  width: 100%;
+}
+
+.submain-container:hover {
+  background-color: #9dc08b;
+}
